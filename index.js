@@ -8,6 +8,7 @@ const app = express()
 
 app.use(express.json())
 app.use("/", router)
+app.use("/tokens", router.get)
 
 async function startApp () {
     try {
