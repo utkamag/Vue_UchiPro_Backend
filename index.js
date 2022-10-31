@@ -5,8 +5,12 @@ import router from "./Router.js";
 const PORT = process.env.PORT || 3000;
 const DB_URL = `mongodb+srv://utkamag:Hesoyam1973@cluster0.gfxjvcx.mongodb.net/?retryWrites=true&w=majority`
 
+const options = {
+    origin: "*"
+};
+
 const app = express()
-app.use(cors())
+app.use(cors(options))
 app.use(express.json())
 app.use("/", router)
 
