@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 app.use("/", router)
 app.use(cors({
-    origin: "https://vuekez.herokuapp.com"
+    origin: 'https://vuekez.herokuapp.com'
 }))
 
 async function startApp () {
