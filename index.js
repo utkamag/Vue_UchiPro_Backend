@@ -9,7 +9,6 @@ const app = express()
 app.use(express.json())
 app.use("/", router)
 
-
 async function startApp () {
     try {
         await mongoose.connect(DB_URL)
