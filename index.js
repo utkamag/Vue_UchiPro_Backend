@@ -1,11 +1,12 @@
-import express from 'express';
+import express from "express"
+import cors from "cors"
 import mongoose from "mongoose";
 import router from "./Router.js";
 const PORT = process.env.PORT || 3000;
 const DB_URL = `mongodb+srv://utkamag:Hesoyam1973@cluster0.gfxjvcx.mongodb.net/?retryWrites=true&w=majority`
 
 const app = express()
-
+app.use(cors())
 app.use(express.json())
 app.use("/", router)
 
