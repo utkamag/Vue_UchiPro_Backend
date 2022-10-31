@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from "mongoose";
-import router from "./router/Router.js";
+import router from "./Router.js";
 const PORT = process.env.PORT || 3000;
 const DB_URL = `mongodb+srv://utkamag:Hesoyam1973@cluster0.gfxjvcx.mongodb.net/?retryWrites=true&w=majority`
 
