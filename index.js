@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 const DB_URL = `mongodb+srv://utkamag:Hesoyam1973@cluster0.gfxjvcx.mongodb.net/?retryWrites=true&w=majority`
 
 const options = {
-    origin: "*"
+    origin: 'https://vuekez.herokuapp.com',
 };
 
 const app = express()
